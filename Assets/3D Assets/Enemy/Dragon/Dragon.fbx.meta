@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 805b27a06d5e54a4eb9f6536e82e3160
+timeCreated: 1433240600
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ARM_L
+    100002: ARM_R
+    100004: CENTER_C
+    100006: //RootNode
+    100008: EX_JAWB1_1_C
+    100010: EX_WING_ARM_L
+    100012: EX_WING_ARM_R
+    100014: EX_WING_FOREARM_L
+    100016: EX_WING_FOREARM_R
+    100018: EX_WING_HAND_L
+    100020: EX_WING_HAND_R
+    100022: EX_WING_HMIDDLE_L
+    100024: EX_WING_HMIDDLE_R
+    100026: EX_WING_INDEX_L
+    100028: EX_WING_INDEX_R
+    100030: EX_WING_RING_L
+    100032: EX_WING_RING_R
+    100034: FINGERBASE_L
+    100036: FINGERBASE_R
+    100038: FOOT_L
+    100040: FOOT_R
+    100042: FOREARM_L
+    100044: FOREARM_R
+    100046: HAND_L
+    100048: HAND_R
+    100050: HEAD1_C
+    100052: HIPS_C
+    100054: LEG_L
+    100056: LEG_R
+    100058: LOWDRG
+    100060: NECK1_C
+    100062: NECK2_C
+    100064: NW_HEAD2_C
+    100066: NW_JAWB1_2_C
+    100068: SPINE1_C
+    100070: SPINE2_C
+    100072: SPINE_C
+    100074: TAIL1_1_C
+    100076: TAIL1_2_C
+    100078: TAIL1_3_C
+    100080: TAIL1_4_C
+    100082: TOEBASE1_1_L
+    100084: TOEBASE1_1_R
+    100086: TOEBASE1_2_L
+    100088: TOEBASE1_2_R
+    100090: TOEBASE_TIP_L
+    100092: TOEBASE_TIP_R
+    100094: UPLEG_L
+    100096: UPLEG_R
+    400000: ARM_L
+    400002: ARM_R
+    400004: CENTER_C
+    400006: //RootNode
+    400008: EX_JAWB1_1_C
+    400010: EX_WING_ARM_L
+    400012: EX_WING_ARM_R
+    400014: EX_WING_FOREARM_L
+    400016: EX_WING_FOREARM_R
+    400018: EX_WING_HAND_L
+    400020: EX_WING_HAND_R
+    400022: EX_WING_HMIDDLE_L
+    400024: EX_WING_HMIDDLE_R
+    400026: EX_WING_INDEX_L
+    400028: EX_WING_INDEX_R
+    400030: EX_WING_RING_L
+    400032: EX_WING_RING_R
+    400034: FINGERBASE_L
+    400036: FINGERBASE_R
+    400038: FOOT_L
+    400040: FOOT_R
+    400042: FOREARM_L
+    400044: FOREARM_R
+    400046: HAND_L
+    400048: HAND_R
+    400050: HEAD1_C
+    400052: HIPS_C
+    400054: LEG_L
+    400056: LEG_R
+    400058: LOWDRG
+    400060: NECK1_C
+    400062: NECK2_C
+    400064: NW_HEAD2_C
+    400066: NW_JAWB1_2_C
+    400068: SPINE1_C
+    400070: SPINE2_C
+    400072: SPINE_C
+    400074: TAIL1_1_C
+    400076: TAIL1_2_C
+    400078: TAIL1_3_C
+    400080: TAIL1_4_C
+    400082: TOEBASE1_1_L
+    400084: TOEBASE1_1_R
+    400086: TOEBASE1_2_L
+    400088: TOEBASE1_2_R
+    400090: TOEBASE_TIP_L
+    400092: TOEBASE_TIP_R
+    400094: UPLEG_L
+    400096: UPLEG_R
+    4300000: LOWDRG
+    9500000: //RootNode
+    13700000: LOWDRG
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

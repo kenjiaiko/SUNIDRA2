@@ -1,0 +1,16 @@
+-----------------------------------------------------------
+CodeGuard, Version 1.3.6
+Copyright © 2013 Apshai Arts
+
+Site:
+https://sites.google.com/site/apshaiarts/products/codeguard
+Contact E-Mail:
+ApshaiArts@gmail.com
+-----------------------------------------------------------
+
+Web Players are tricky to obfuscate, more so than Standalone and Mobile builds. If you are targeting Web Player, be aware that in Web Player builds, if the Fields of a Unity Type is set in the Unity Editor Inspector they usually cannot be obfuscated (they will go back to their default value).
+You can either use the option Skip Unity Types Public Fields or use the System.Reflection.ObfuscationAttribute on those Fields instead.
+
+The new Web Player (even in backwards compatibility mode) doesn't like certain unreadable characters used by CodeGuard. If Web Player builds freeze at start, go to Symbol Renaming Mode (under Misc) and select either Latin or Unreadable Lite.
+
+If you have any questions, comments, critique or need support, don't hesitate to e-mail to: ApshaiArts@gmail.com

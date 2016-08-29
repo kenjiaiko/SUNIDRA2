@@ -1,0 +1,25 @@
+-----------------------------------------------------------
+CodeGuard, Version 1.3.6
+Copyright © 2013 Apshai Arts
+
+Site:
+https://sites.google.com/site/apshaiarts/products/codeguard
+Contact E-Mail:
+ApshaiArts@gmail.com
+-----------------------------------------------------------
+
+Compatibility with other Asset Store packages:
+
+2D Toolkit:
+	If you are having issues with crashes at startup, you must enable the Skip: Fields With SerializeField Attribute option.
+	If that doesn't help, then add (without the quotes) "tk2d*" to Skip Type.
+	
+NGUI:
+	If you are having issues with crashes at startup, you must enable the Skip: Fields With SerializeField Attribute option.
+	If that doesn't help, then add (without the quotes) "UI*" to Skip Type.
+	
+KGFMinimap:
+	If you are having issues with crashes at startup, you must enable the Skip: Fields With SerializeField Attribute option.
+	If that doesn't help, then add (without the quotes) "KGF*" to Skip Type.
+
+If you have any other compatiblitiy tips, general questions, comments, critique or need support, don't hesitate to e-mail to: ApshaiArts@gmail.com

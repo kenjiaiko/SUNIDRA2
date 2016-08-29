@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 1d9f8e14b31164d09b1c7aff07f87924
+timeCreated: 1433240599
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ARM_L
+    100002: ARM_R
+    100004: CENTER_C
+    100006: EX_JAWB1_1_C
+    100008: EYE
+    100010: FINGERBASE_L
+    100012: FINGERBASE_R
+    100014: FOOT_L
+    100016: FOOT_R
+    100018: FOREARM_L
+    100020: FOREARM_R
+    100022: HAND_L
+    100024: HAND_R
+    100026: HEAD1_C
+    100028: HIPS_C
+    100030: LEG_L
+    100032: LEG_R
+    100034: NECK1_C
+    100036: NW_FINGERBASE_TIP_L
+    100038: NW_FINGERBASE_TIP_R
+    100040: NW_HEAD2_C
+    100042: NW_JAWB1_2_C
+    100044: NW_TAIL1_2_C
+    100046: RETMESH2
+    100048: Root
+    100050: RUVret
+    100052: SHOULDER_L
+    100054: SHOULDER_R
+    100056: SPINE1_C
+    100058: SPINE2_C
+    100060: SPINE3_C
+    100062: TAIL1_1_C
+    100064: TEETHret
+    100066: TOEBASE_L
+    100068: TOEBASE_R
+    100070: TOEBASE_TIP_L
+    100072: TOEBASE_TIP_R
+    100074: UPLEG_L
+    100076: UPLEG_R
+    100078: //RootNode
+    400000: ARM_L
+    400002: ARM_R
+    400004: CENTER_C
+    400006: EX_JAWB1_1_C
+    400008: EYE
+    400010: FINGERBASE_L
+    400012: FINGERBASE_R
+    400014: FOOT_L
+    400016: FOOT_R
+    400018: FOREARM_L
+    400020: FOREARM_R
+    400022: HAND_L
+    400024: HAND_R
+    400026: HEAD1_C
+    400028: HIPS_C
+    400030: LEG_L
+    400032: LEG_R
+    400034: NECK1_C
+    400036: NW_FINGERBASE_TIP_L
+    400038: NW_FINGERBASE_TIP_R
+    400040: NW_HEAD2_C
+    400042: NW_JAWB1_2_C
+    400044: NW_TAIL1_2_C
+    400046: RETMESH2
+    400048: Root
+    400050: RUVret
+    400052: SHOULDER_L
+    400054: SHOULDER_R
+    400056: SPINE1_C
+    400058: SPINE2_C
+    400060: SPINE3_C
+    400062: TAIL1_1_C
+    400064: TEETHret
+    400066: TOEBASE_L
+    400068: TOEBASE_R
+    400070: TOEBASE_TIP_L
+    400072: TOEBASE_TIP_R
+    400074: UPLEG_L
+    400076: UPLEG_R
+    400078: //RootNode
+    4300000: RUVret
+    4300002: TEETHret
+    4300004: EYE
+    9500000: //RootNode
+    13700000: EYE
+    13700002: RUVret
+    13700004: TEETHret
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

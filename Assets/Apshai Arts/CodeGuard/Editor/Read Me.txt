@@ -1,0 +1,214 @@
+-----------------------------------------------------------
+CodeGuard, Version 1.3.6
+Copyright © 2013 Apshai Arts
+
+Site:
+https://sites.google.com/site/apshaiarts/products/codeguard
+Contact E-Mail:
+ApshaiArts@gmail.com
+-----------------------------------------------------------
+
+Thank you for purchasing Apshai Arts CodeGuard.
+
+CodeGuard is a Unity3D obfuscation editor extension. 
+
+As Unity3D uses Mono (a clone of Microsofts .NET framework) it is easy to read and manipulate the code of Unity3D projects via freely available tools. Obfsucators are programs used to hinder this, but due to the nature of Unity3D, normal .NET obfuscators cannot obfsucate Unity3D projects without breaking them. CodeGuard is an obfuscator and code protector written specifically for Unity3D projects.
+
+Works in Unity Free & Pro, Windows and Mac for obfuscation and code protection of Windows, Mac, Linux, Web Player, Android and iOS/iPhone builds.
+
+Features:
+
+	Symbol renaming/obfuscation of private, protected and public members. Turn "public int secretCode" into "public int ?;".
+
+	Unity3D MonoBehaviours and Components require certain methods to retain their original name, such as "Update()". CodeGuard can create Proxy Methods for them, so they turn into:
+	"public void Update() { this.?(); }".
+
+	CodeGuard can also proxy your own Custom Methods, so SendMessage and other similar calls still work. CodeGuard automatically searches your code for SendMessage and similar calls, so they can be proxied and methods not in use by SendMessage or similar calls can have their names obfuscated.
+
+	Symbol renaming/obfuscation of all parameters. Turn "public void Register(string code)" into: "public void ?(string ?)".
+
+	Strip the UnityEngine attributes of Types, Fields and Methods. Removes AddComponentMenu, HideInInspector and other Unity attributes.
+
+	Code optimization and size reduction.
+
+	Easy to use, comes with three different profiles: Low, Medium and Aggressive. Recommended setting for most projects is Medium, Aggressive obfuscation often breaks projects if they use a lot of SendMessage or similar calls.
+
+	Customizable options, each feature can be turned off or on easily via the CodeGuard settings window. Supports the System.Reflection.ObfuscationAttribute for Types/Classes, Fields, Properties and Methods.
+
+	Automatic obfuscation and protection via postprocess build actions. Enable Post-Build Guarding and CodeGuard will automatically obfuscate and protected your code. Available for Windows, Mac, Linux, Web Player, Android and iOS/iPhone builds.
+	
+Usage:
+	
+	All CodeGuard options and features reside under the menu Window/CodeGuard:
+	
+	CodeGuard/Settings: This will open the CodeGuard Settings window. See below for details.
+	
+	CodeGuard/Profiles/Low: This will work on almost all projects (it might break if you use a lot of reflection), but offers only little protection.
+	
+	CodeGuard/Profiles/Medium: This will enable most CodeGuard features, such as renaming of many private, protected and public members, renaming of parameters, proxying of methods etc. Recommended setting.
+	
+	CodeGuard/Profiles/High: This will enable slightly more CodeGuard features than Medium, and disable others such as proxying custom methods, for increased protection and obfuscation.
+	
+	CodeGuard/Profiles/Aggressive: This will enable the most aggressive obfuscation and protection settings, but might break projects.
+	
+	CodeGuard/Guard Unity Project Assemblies:
+	On Windows: This will open a Folder/Directory select window. Navigate to a built Unity projects folder, and select the projects Data folder or find and select the Managed folder (inside the Data folder) to obfuscate and protect the project.
+	On Mac OS X: This will open a File select window. Navigate to a built Unity projects folder and select the built Unity projects application  to obfuscate and protect the project.
+	
+	Settings:
+	
+	Assemblies:
+		Script Assemblies: Automatically adds the Unity Projects Script Assemblies.
+		Automatically All: Automatically adds all Assemblies used in the project.
+		Custom: Specify exactly which Assemblies that should be added. You can use * as a wildcard.
+	
+	Types:
+		Protect: All Except Skip Types: All Types (Components, MonoBehaviours) except those in Skip Types.
+				 Selected Types: Only those in Select Types.
+				 Combination: Only those in Select Types that is not in Skip Types.
+				 
+		Select Types: Protects and obfuscates these types. You can use * as a wildcard, for example if you select type: Test*this then the type Testorthis will be protected as well as TestNotthis. Case sensitive.
+	
+	Obfuscate:
+		Private Members: If enabled, obfuscates all Private Members (Fields, Methods and Properties).
+		
+		Private Fields & Properties: If enabled, obfuscates all Private Fields and Properties).
+		
+		Type Fields: If enabled, obfuscates Fields of all Types. Some Fields might be skipped to ensure the Unity Project still works.
+		
+		Type Fields Aggressively: If enabled, obfuscates Fields of all Types. This might break some Unity projects.
+		
+		Custom Methods: If enabled, obfuscates Custom Methods of all Types. Some Methods might be skipped to ensure the Unity Project still works, sometimes this protection fails and this will result in a broken projects.'
+		
+		Proxy Parameters: If enabled, obfuscates the Parameters of Proxy Methods.
+		
+		Method Parameters: If enabled, obfuscates the Parameters of all non Proxy Methods.
+		
+		Aggressively: If enabled, obfuscates as much as possible. This migth break projects which rely on SendMessage or similar calls.
+		
+		Exclude Method Names: If you are using Custom Methods in SendMessage calls or similar, then you might need to add their names (short: OnDamage, or full: Enemy.OnDamage) here. You can use * as a wildcard, for example if you exclude method: Test*this then the method Testorthis will be skipped as well as TestNotthi. Case sensitive.
+		CodeGuard searches your code for SendMessage (or similar) calls and automatically excludes their names from obfuscation, but if you use String variables in your calls, like SendMessage(stringVar), CodeGuard might not find them. An alternative to this option is to use the System.Reflection.ObfuscationAttribute on those Methods instead.
+	
+	Proxy:
+		Unity Methods: If enabled, creates Proxy Methods of Unity Methods (such as Update() or OnGUI()).
+		
+		Excluded Method Names: If enabled, creates Proxy Methods of Excluded Methods (such as OnDamage(float damage) etc).
+		
+		Custom Methods: If enabled, creates Proxy Methods of Custom Methods (except Excluded Methods).
+	
+	RPCs: Unity networking, Photon, uLink and TNet RPCs/RFCs.
+		Action: Skip: Skips obfsucating the name of RPC methods (parameters will be obfuscated if Obfuscate Method Parameters is enabled.
+				Proxy: Proxies RPC methods (and removes the RPC Attribute from the original method).
+	
+	Skip:
+		Unity Types Public Fields: Skips obfuscation of Unity Types (MonoBehaviours, Components etc) public Fields. In Web Player builds, if the Fields are set in the Inspector they usually cannot be obfuscated. An alternative to this option is to use the System.Reflection.ObfuscationAttribute on those Fields instead.
+		
+		Unity Types Public Static Fields: Skips obfuscation of Unity Types (MonoBehaviours, Components etc) public static Fields. An alternative to this option is to use the System.Reflection.ObfuscationAttribute on the Fields instead
+		
+		Fields With SerializeField Attribute: Skips obfuscation of Fields with the SerializeField attribute. This is most important in WebPlayer builds, but if you are having issues with crashes at startup (even in other builds) then try enabling this option.
+		
+		Types:
+		Skips obfuscation and protection of these types. You can use * as a wildcard, for example if you skip type: Test*this then the type Testorthis will be skipped as well as TestNotthis. Case sensitive.
+	
+	Misc:
+		Web Player Compatibility: The new Web Player doesn't like certain unreadable characters used by CodeGuard. If Web Player builds freeze at start, select either Latin or Unreadable Lite.
+		
+		Post-Build Guarding: Automatic obfuscation and protection via postprocess build actions. If enabled CodeGuard will automatically obfuscate and protected your code. Available for Windows, Mac, Linux, Web Player, Android and iOS/iPhone builds.
+		
+		Create Backup: Enable or disable backup creation of Data folder (Windows and Linux) or Application (Mac OS X). Not supported on Web Player, Android or iOS builds.
+
+System.Reflection.ObfuscationAttribute:
+
+	To skip obfuscation and protection of a Type/Class:
+		[System.Reflection.ObfuscationAttribute(Exclude=true)] //Exclude defaults to true, so you don't need to write it
+		public class SkippedGuardingOfThisClass {
+			public string text = "Skipped class and fields";
+		}
+	If you only want to skip the obfuscation of the name of a Type/Class:
+		[System.Reflection.ObfuscationAttribute(Exclude=true, ApplyToMembers=false)]
+		public class SkippedGuardingOfThisClass {
+			public string text = "Skipped name of class";
+		}
+	
+	To skip obfuscation and protection of a Field:
+		[System.Reflection.Obfuscation(Exclude=true)]
+		public string skippedField = "Non guarded field";
+	
+	To skip obfuscation and protection of a Method:
+		[System.Reflection.Obfuscation(Exclude=true)]
+		public void SkippedGuardingOfMethod() {
+		}
+	
+	To only skip obfuscation of the name of a Method (if Proxy Excluded Method Names is enabled, the Method will be Proxied as well):
+		[System.Reflection.Obfuscation(Exclude=false, Feature="ExcludeMethodName")]
+		public void SkippedRenamingOfMethod() {
+		}
+
+	
+Default settings are no obfuscation and code protection. Recommended profile settings for most projects to start with is Medium.
+
+If you have any questions, comments, critique or need support, don't hesitate to e-mail to: ApshaiArts@gmail.com
+
+Upcoming (in no particular order):
+Tutorial - Angry Bots (a short how to use CodeGuard with the Angry Bots sample Unity project).
+RPCs - Obfuscate (will change all the RPC calls to the obfuscated name).
+Interface - easier add and remove Types to the Select- and Skip Types.
+Obfuscation of strings (and perhaps other variable types).
+Save-able custom profiles.
+Windows Phone and BlackBerry support.
+
+Version History:
+
+1.3.6 - • Added the Skip: Fields With SerializeField Attribute option.
+		• Fixed a big with the wildcard search.
+
+1.3.5 - • Fixed bug with Enum.GetValues().
+		• Improved support for nested types.
+
+1.3.4 - • Moved the CodeGuard menu items from Edit to the menu Windows.
+		• Added support for ApplyToMembers option in System.Reflection.ObfuscationAttribute for Types/Classes.
+		• Bug fix regarding iOS builds with external assemblies/dlls.
+		• Added a WebPlayer profile.
+		• Fixed an error with Wildcards and the Assemblies Protect Custom option.
+
+1.3.3 - • Optimized memory usage when obfuscating and protecting large projects.
+		• Improved re-usage of obfuscated symbols.
+		• Fixed a bug with adding certain components at runtime.
+		• Fixed a bug with virtual methods.
+		• Fixed a UnityScript coroutine bug.
+
+1.3.2 - • Added the option to only obfuscate and protect selected Types.
+		• Added option to obfuscate protected and public Properties.
+		• Skip Unity Public Fields no longer skips static fields, constants or fields with the HideInInspector attribute.
+		• Web Player Compatibility Mode has been renamed to Symbol Renaming Mode and is now available in all build options. If any kind of build (since Unity made the Web Player builds more sensitive to unreadable symbols, they might make other builds more sensitive too) freezes at start, try using either Symbol Renaming Mode Unreadable Lite or Latin. 
+		• Fixed a directory finding bug with Standalone post-build obfuscation on Windows.
+		• Fixed a bug with Coroutines and Obfuscate Custom Methods enabled and Proxy Custom Methods disabled.
+
+1.3.1 - • There are now 4 built-in profiles; Low, Medium, High and Aggressive.
+		• Added settings for RPC methods (works with Unity networking, Photon, uLink and TNet RPCs/RFCs - using another networking library that uses RPCs, or something similar, and wants us to add it just contact us).
+		• Added Web Player Compatibility Unreadable Lite.
+		• Various interface tweaks for the Settings window, and changed the order of the CodeGuard menu items.
+		• Fixed a bug where Unity Methods would be obfuscated if Obfuscate Private Members was enabled while Proxy Unity Methods was not enabled.
+		• Fixed a bug where Unity would sometimes refuse to import CodeGuard.
+
+1.3.0 - • Post-Build obfuscation now available for iOS/iPhone builds.
+		• Improved re-usage of obfuscated symbols.
+		• Added options to allow users to choose which assemblies should be obfuscated and protected.
+		• Improved Exclude Methods setting, it is now possible to use Wildcards(*). If you use * as a wildcard, for example if you exclude method: Test*this then the method Testorthis will be skipped as well as TestNotthis.
+		• Can now skip Types, and it is possible to use Wildcards(*). If you use * as a wildcard, for example if you skip type: Test*this then the type Testorthis will be skipped as well as TestNotthis. 
+		• Fixed a bug that caused Unity 4.1.3 to crash when Web Player was the chosen platform.
+		• Fixed several bugs.
+
+1.2.1 - • Optimized the obfuscation and protection process.
+		• Added more information to the tooltips in the Settings Window.
+
+1.2.0 - • Post-Build obfuscation now available for Android builds.
+		• Support of the System.Reflection.ObfuscationAttribute string property Feature (only on Methods, if Feature is "ExcludeMethodName" then that Methods name will not be obfuscated, and if Proxy Excluded Method Names is true the Method will be Proxied).
+		
+1.1.0 - • Increased obfuscation of custom (ie non-Unity standard) methods.
+		• Post-Build obfuscation now available for Web Player builds.
+		• Settings are now in a window, instead of just menu items. Easier to use, and with more options.
+		• Saved settings are no longer global, but tied to each unique Unity Project instead.
+		• Support of the System.Reflection.ObfuscationAttribute (on Types/Classes, Fields, Properties and Methods) boolean property Exclude (if true, excludes the Type/Class, Field, Properties or Method from obfuscation and protection).
+		
+1.0.0 - Initial release.

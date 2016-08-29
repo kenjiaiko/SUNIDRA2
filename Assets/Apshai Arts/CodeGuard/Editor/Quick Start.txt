@@ -1,0 +1,25 @@
+-----------------------------------------------------------
+CodeGuard, Version 1.3.6
+Copyright © 2013 Apshai Arts
+
+Site:
+https://sites.google.com/site/apshaiarts/products/codeguard
+Contact E-Mail:
+ApshaiArts@gmail.com
+-----------------------------------------------------------
+
+Thank you for purchasing Apshai Arts CodeGuard.
+
+Quick Start:
+
+1. Import the CodeGuard package, if you have not done so already.
+
+2. Go to menu item Window/CodeGuard/Settings. This will open the CodeGuard Settings window.
+
+3. In the top section of the CodeGuard Settings window there is a Profile popup menu: select Medium.
+
+4. Build your project, it will automatically become obfuscated and protected.
+
+
+
+If you have any questions, comments, critique or need support, don't hesitate to e-mail to: ApshaiArts@gmail.com

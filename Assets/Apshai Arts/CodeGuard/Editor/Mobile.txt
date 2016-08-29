@@ -1,0 +1,13 @@
+-----------------------------------------------------------
+CodeGuard, Version 1.3.6
+Copyright © 2013 Apshai Arts
+
+Site:
+https://sites.google.com/site/apshaiarts/products/codeguard
+Contact E-Mail:
+ApshaiArts@gmail.com
+-----------------------------------------------------------
+
+Mobile builds, especially iOS, are a bit tougher to protect than Standalone. If you are having issues try to modify some of the "Optimizations" in Unity Player Settings, like settng Api Compatibility Level to ".NET 2.0" and/or lower the Stripping.
+
+If you have any questions, comments, critique or need support, don't hesitate to e-mail to: ApshaiArts@gmail.com
