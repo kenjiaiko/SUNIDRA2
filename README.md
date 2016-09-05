@@ -10,12 +10,10 @@ SECCON 2016 × CEDEC CHALLENGEで扱われたゲームのソースコード
 1. [問題ファイル一式](http://1drv.ms/u/s!AtaQw-wbmFVpey-cWSc8e4RQJlQ) をダウンロード
 2. NightmaresのSCORE, HPを任意に改ざん
 3. NightmaresのGame DLL(/Data/Managed/Assembly-CSharp-*.dll)の復元
-
-
-1. SUNIDRA2のaccount登録（https://cedec.seccon.jp/2016/sign-up）
-2. SUNIDRA2のスタミナを任意に改ざん
-3. SUNIDRA2のスタミナ以外のステータスを改ざん
-4. SUNIDRA2の暗号化された通信プロトコルの解析
+4. SUNIDRA2のaccount登録（https://cedec.seccon.jp/2016/sign-up）
+5. SUNIDRA2のスタミナを任意に改ざん
+6. SUNIDRA2のスタミナ以外のステータスを改ざん
+7. SUNIDRA2の暗号化された通信プロトコルの解析
 
 ## How to build
 [Unity](https://unity3d.com/jp/)をダウンロード、インストール。
@@ -26,7 +24,7 @@ git clone https://github.com/kenjiaiko/SUNIDRA2
 ```
 Unityから開く。
 
-File -> Build Settings（Build Settingsのウィンドウが開く）
+File -> Build Settings（Build Settingsのウィンドウが開く） 
 Android -> Player Settings -> Other Settings -> Configuration -> Scripting Backend -> IL2CPP
 
 Build
