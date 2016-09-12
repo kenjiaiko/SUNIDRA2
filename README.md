@@ -31,6 +31,11 @@ Build
 
 Build途中でAndroid SDKとNDKが求められるため、ダウンロード＆pathを指定。
 
+## Binary Files
+Build by Unity 5.4.0f3 Personal  
+https://1drv.ms/u/s!AtaQw-wbmFVpgQFnRjS_J8XG8Bly (.apk)  
+https://1drv.ms/u/s!AtaQw-wbmFVpgQLyynP--SUUGBZG (.ipa)  
+
 ## Reference
 - [Unityゲーム開発-オンライン3Dアクションゲームの作り方](http://www.amazon.co.jp/dp/4797374403)
 - [DOVA SYNDROME](http://dova-s.jp/)：[晴れた日の街（BGM）](http://dova-s.jp/bgm/play4595.html)、[1f（効果音）](http://dova-s.jp/se/play114.html)
