@@ -6,7 +6,7 @@ SECCON 2016 × CEDEC CHALLENGEで扱われたゲームのソースコード
 
 [問題ファイル一式](http://1drv.ms/u/s!AtaQw-wbmFVpey-cWSc8e4RQJlQ)  
 
-<img src="https://github.com/kenjiaiko/SUNIDRA2/tree/master/README_Images/cedec2016_1.png" width="320px"> <img src="https://github.com/kenjiaiko/SUNIDRA2/tree/master/README_Images/cedec2016_2.png" width="320px">
+<img src="https://raw.githubusercontent.com/kenjiaiko/SUNIDRA2/master/README_Images/cedec2016_1.png" width="320px"> <img src="https://raw.githubusercontent.com/kenjiaiko/SUNIDRA2/master/README_Images/cedec2016_2.png" width="320px">
 
 ## How to play
 1. [問題ファイル一式](http://1drv.ms/u/s!AtaQw-wbmFVpey-cWSc8e4RQJlQ) をダウンロード
