@@ -39,9 +39,9 @@ https://1drv.ms/u/s!AtaQw-wbmFVpgQFnRjS_J8XG8Bly (.apk)
 https://1drv.ms/u/s!AtaQw-wbmFVpgQLyynP--SUUGBZG (.ipa)  
 
 ## Demo
-https://www.youtube.com/watch?v=h4HERvCsjY0 (SpeedHack)
-https://www.youtube.com/watch?v=DKrFf05QOwU (rewrite XML)
-https://www.youtube.com/watch?v=KLrbgNA1bhM (gdb)
+https://www.youtube.com/watch?v=h4HERvCsjY0 (SpeedHack)  
+https://www.youtube.com/watch?v=DKrFf05QOwU (rewrite XML)  
+https://www.youtube.com/watch?v=KLrbgNA1bhM (gdb)  
 
 ## Reference
 - [Unityゲーム開発-オンライン3Dアクションゲームの作り方](http://www.amazon.co.jp/dp/4797374403)
